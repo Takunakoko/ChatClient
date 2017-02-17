@@ -25,11 +25,13 @@ public class SocketHandler {
         sc = new Scanner(inStr);
         pw = new PrintWriter(outStr);
 
+
         Thread th = new Thread(new ConsoleReader(pw));
         th.start();
 
         while (sc.hasNextLine()){
             System.out.println(sc.nextLine());
+
         }
     }
 

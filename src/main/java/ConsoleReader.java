@@ -1,7 +1,5 @@
 
-import java.io.BufferedInputStream;
-import java.io.InputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -15,11 +13,14 @@ public class ConsoleReader implements Runnable {
     }
 
     public void run() {
-        InputStream inStream = new BufferedInputStream(System.in);
-        Scanner scan = new Scanner(inStream);
+            InputStream inStream = new BufferedInputStream(System.in);
+            Scanner scan = new Scanner(inStream);
 
-        while (true){
+
+
+        while (scan.hasNextLine()){
             pr.println(scan.nextLine());
+            pr.flush();
         }
 
     }
