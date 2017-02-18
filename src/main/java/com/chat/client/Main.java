@@ -1,3 +1,5 @@
+package com.chat.client;
+
 import java.net.Socket;
 
 /**

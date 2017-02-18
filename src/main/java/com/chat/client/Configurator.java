@@ -1,3 +1,5 @@
+package com.chat.client;
+
 /**
  * Created by takunaka on 15.02.17.
  */

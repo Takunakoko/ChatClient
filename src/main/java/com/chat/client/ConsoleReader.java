@@ -1,3 +1,4 @@
+package com.chat.client;
 
 import java.io.*;
 import java.util.Scanner;
