@@ -1,11 +1,21 @@
 package com.chat.client.db;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
 /**
  * Created by takunaka on 17.02.17.
  */
-public class UsersEntity {
+@Entity
+@Table(name = "USERS")
+public class UsersEntity implements Serializable {
+    @Column(name = "username")
     private String username;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
+    @Column(name = "password")
     private String password;
 
     public UsersEntity() {

@@ -5,9 +5,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   					   http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.chat.client.web.controllers"/>
-    <context:component-scan base-package="com.chat.client.web.services"/>
+    <context:component-scan base-package="com.chat.client.web"/>
 
-    <bean id="usersDao" class="com.chat.client.db.UsersDAO"/>
+    <bean id="usersDao" class="com.chat.client.db.UsersDAOImpl"/>
+    <bean id="otherUserDao" class="com.chat.client.db.OtherUserDaoImpl"/>
     <bean id="usersServices" class="com.chat.client.web.services.UsersService"/>
 </beans>
